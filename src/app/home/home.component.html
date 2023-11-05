@@ -1,0 +1,45 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div>   
+        <label>
+            id :
+            <input formControlName="id" placeholder="Id">
+        </label>
+    </div>
+    <div>
+        <label>
+            first name :
+            <input formControlName="firstname" placeholder="First name">
+        </label>
+    </div>
+    <div>
+        <label>
+            last name :
+            <input formControlName="lastname" placeholder="Last name">
+        </label>
+    </div>
+    <div>
+        <label>
+            email :
+            <input formControlName="email" placeholder="email">
+        </label>
+    </div>
+    <div>
+        <label>
+            avatar :
+            <input formControlName="avatar" placeholder="avatar">
+        </label>
+    </div>
+    <div>
+        <label>
+            numberdelete :
+            <input formControlName="numberdelete" placeholder="numberdelete">
+        </label>
+    </div>
+    <button type="submit">Send</button>
+    <button type="button" (onclick)="deleteId()">Delete</button>
+
+</form>
+
+<table #dataTable class="display" style="width:100%">
+    
+</table>
